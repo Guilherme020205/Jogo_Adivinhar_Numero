@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,29 @@
     <link rel="stylesheet" href="CSS/style.css">
     <title>Jogo</title>
 </head>
+
 <body>
+    <Header>
+        <h1>Adivinhe o número escondido</h1>
+        <h2 id="numeroEscondido"></h2>
+        <div class="tentativas">
+            <h1>Tentativas</h1>
+            <h3 id="tentativas"></h3>
+        </div>
+
+    </Header>
+
     <div class="interacao">
-        <input type="text" name="campoDeTexto" id="campoDeTexto">
-        <button>Verificar</button>
+        <input type="text" name="campoDeTexto" id="campoDeTexto" required>
+        <input type="submit" onclick="verificar(); return false" />
+        <div class="auxilio">
+            <img class="Maior" src="maior.png" id="Maior">
+            <img class="Menor" src="menor.webp" id="Menor">
+        </div>
+
     </div>
+
     <script src="JS/script.js"></script>
 </body>
+
 </html>

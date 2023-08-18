@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Maior{
+    width: 20px;
+    display: none;
+}
+
+.Menor{
+    width: 20px;
+    display: none;
+}

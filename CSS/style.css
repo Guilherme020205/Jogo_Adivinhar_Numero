@@ -1,18 +1,97 @@
-*{
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 200px;
+    background-image: url('https://png.pngtree.com/background/20210712/original/pngtree-cute-hand-drawn-style-mathematics-education-pink-background-picture-image_1176711.jpg');
+    background-size: 115%;
+    background-repeat: no-repeat;
 }
-.Maior{
-    width: 20px;
+
+
+.tentativas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.numNentativas{
+    text-decoration: underline;
+}
+
+.boxInteracao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.input{
+    height: 22px;
+    width: 150px;
+}
+
+.dica{
+    width: min-content;
+}
+
+.Maior {
+    width: 50px;
     display: none;
 }
 
-.Menor{
-    width: 20px;
+.Menor {
+    width: 50px;
     display: none;
+}
+
+.button{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+
+.atualizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+    display: none;
+    border-radius: 5px;
+    padding: 50px;
+    background-color: aliceblue;
+
+}
+
+.textoFimGame {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.textoReload {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.atualizacaogif {
+    width: 20px;
+}
+.textNumSorteado{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.numeroEscondido{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
 }

@@ -10,25 +10,40 @@
 </head>
 
 <body>
-    <Header>
-        <h1>Adivinhe o número escondido</h1>
-        <h2 id="numeroEscondido"></h2>
+
+
+    <Header id="boxHeader">
+        <h1>Adivinhe o número</h1>
         <div class="tentativas">
             <h1>Tentativas</h1>
-            <h3 id="tentativas"></h3>
+            <h3 class="numNentativas" id="tentativas"></h3>
         </div>
 
     </Header>
 
-    <div class="interacao">
-        <input type="text" name="campoDeTexto" id="campoDeTexto" required>
-        <input type="submit" onclick="verificar(); return false" />
-        <div class="auxilio">
+    <div id="boxInteracao" class="boxInteracao">
+
+        <input class="input" type="text" name="campoDeTexto" id="campoDeTexto" required>
+        <input class="button" type="submit" onclick="verificar(); return false" />
+        <div class="dica">
             <img class="Maior" src="maior.png" id="Maior">
-            <img class="Menor" src="menor.webp" id="Menor">
+            <img class="Menor" src="menor.png" id="Menor">
         </div>
 
+
     </div>
+
+
+    <div class="atualizacao" id="atualizacao">
+        <h1 class="textoFimGame" id="textoFimGame"></h1>
+        <h2 class="textoReload" id="textoReload">Estamos recarregando a página para você</h2>
+        <img class="atualizacaogif" src="loadinggif.gif">
+        <h1 class="textNumSorteado">Numero Sorteado</h1>
+        <h2 class="numeroEscondido" id="numeroEscondido"></h2>
+    </div>
+
+
+
 
     <script src="JS/script.js"></script>
 </body>
